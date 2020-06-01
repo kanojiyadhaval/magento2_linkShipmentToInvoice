@@ -1,0 +1,34 @@
+ 
+{
+  "name": "vendor/customizeinvoice",
+  "version": "0.1.1",
+  "license": "OSL-3.0",
+  "type": "magento2-module",
+  "homepage": "https://github.com/kanojiyadhaval/magento2_linkShipmentToInvoice",
+  "description": "Magento 2 module which links Order shipments with Invoices",
+  "keywords": [
+    "composer-installer",
+    "magento",
+    "Shipments",
+    "Magento 2",
+    "Invoices",
+    "Magento2 invoice"
+  ],
+  "authors": [
+    {
+      "name": "Dhaval Kanojiya",
+      "email": "dhavalkanojiya4@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Vendor\\CustomizeInvoice\\": ""
+    },
+    "files": [
+      "registration.php"
+    ]
+  }
+}
