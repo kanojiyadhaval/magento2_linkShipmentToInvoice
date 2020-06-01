@@ -1,5 +1,5 @@
 <?php
-namespace Vendor\CustomizeInvoice\Observer;
+namespace Magechamp\CustomizeInvoice\Observer;
   
 use Magento\Framework\Event\ObserverInterface;
 use Magento\Framework\App\RequestInterface;

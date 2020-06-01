@@ -1,5 +1,5 @@
 <?php
-namespace Vendor\CustomizeInvoice\Ui\Component\Listing\Column;
+namespace Magechamp\CustomizeInvoice\Ui\Component\Listing\Column;
 
 use \Magento\Framework\View\Element\UiComponent\ContextInterface;
 use \Magento\Framework\View\Element\UiComponentFactory;

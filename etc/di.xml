@@ -8,6 +8,6 @@
         </arguments>
     </type>
     <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
-        <plugin name="customizeinvoice_sales_invoice_grid_col" type="Vendor\CustomizeInvoice\Plugin\CustomizeInvoiceGrid" sortOrder="100" disabled="false" />
+        <plugin name="customizeinvoice_sales_invoice_grid_col" type="Magechamp\CustomizeInvoice\Plugin\CustomizeInvoiceGrid" sortOrder="100" disabled="false" />
     </type>
 </config>

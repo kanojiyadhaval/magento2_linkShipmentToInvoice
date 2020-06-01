@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
     <columns name="sales_order_invoice_columns">
-        <column name="linked_shipping_id" class="Vendor\CustomizeInvoice\Ui\Component\Listing\Column\LinkedShippingId">
+        <column name="linked_shipping_id" class="Magechamp\CustomizeInvoice\Ui\Component\Listing\Column\LinkedShippingId">
             <settings>
                 <label translate="true">Linked Shipping Ids</label>
             </settings>

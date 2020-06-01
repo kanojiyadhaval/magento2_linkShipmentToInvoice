@@ -1,6 +1,6 @@
 <?php
 \Magento\Framework\Component\ComponentRegistrar::register(
     \Magento\Framework\Component\ComponentRegistrar::MODULE,
-    'Vendor_CustomizeInvoice',
+    'Magechamp_CustomizeInvoice',
     __DIR__
 );

@@ -1,6 +1,6 @@
 <?php
 
-namespace Vendor\CustomizeInvoice\Setup;
+namespace Magechamp\CustomizeInvoice\Setup;
 
 use Magento\Framework\DB\Ddl\Table;
 use Magento\Framework\Setup\InstallSchemaInterface;

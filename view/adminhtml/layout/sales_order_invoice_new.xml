@@ -5,9 +5,9 @@
             <referenceBlock name="sales_invoice_create">
                 <referenceBlock name="form">
                     <action method="setTemplate">
-                        <argument name="template" translate="true" xsi:type="string">Vendor_CustomizeInvoice::order/invoice/create/form.phtml</argument>
+                        <argument name="template" translate="true" xsi:type="string">Magechamp_CustomizeInvoice::order/invoice/create/form.phtml</argument>
                     </action>
-                    <block class="Vendor\CustomizeInvoice\Block\Adminhtml\Order\View\Info" name="custom_shipment_list" template="Vendor_CustomizeInvoice::order/invoice/create/shipment/list.phtml" />
+                    <block class="Magechamp\CustomizeInvoice\Block\Adminhtml\Order\View\Info" name="custom_shipment_list" template="Magechamp_CustomizeInvoice::order/invoice/create/shipment/list.phtml" />
                 </referenceBlock>
             </referenceBlock>
         </referenceContainer>

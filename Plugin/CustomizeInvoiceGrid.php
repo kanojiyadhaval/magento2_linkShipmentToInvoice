@@ -1,5 +1,5 @@
 <?php
-namespace Vendor\CustomizeInvoice\Plugin;
+namespace Magechamp\CustomizeInvoice\Plugin;
 
 use Magento\Framework\Message\ManagerInterface as MessageManager;
 use Magento\Sales\Model\ResourceModel\Order\Invoice\Orders\Grid\Collection as SalesOrderInvoiceGridCollection;

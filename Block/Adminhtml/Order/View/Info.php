@@ -1,5 +1,5 @@
 <?php
-namespace Vendor\CustomizeInvoice\Block\Adminhtml\Order\View;
+namespace Magechamp\CustomizeInvoice\Block\Adminhtml\Order\View;
 
 
 /**
