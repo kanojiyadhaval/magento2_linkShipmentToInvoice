@@ -18,8 +18,8 @@ class LinkedShippingId extends Column
         UiComponentFactory $uiComponentFactory,
         Shipment $shipmentFactory,
         array $components = [],
-        array $data = [])
-    {
+        array $data = []
+    ) {
         $this->shipmentFactory = $shipmentFactory;
         parent::__construct($context, $uiComponentFactory, $components, $data);
     }

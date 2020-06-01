@@ -1,7 +1,6 @@
 <?php
 namespace Magechamp\CustomizeInvoice\Block\Adminhtml\Order\View;
 
-
 /**
  * @api
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
@@ -12,12 +11,12 @@ class Info extends \Magento\Sales\Block\Adminhtml\Order\View\Info
 
     /**
      * Return an array of linked shipping ids with any of invoices
-     * 
+     *
      * @return array
      */
     public function getLinkedShipmentIds()
     {
-        $linkedShipmentIds = array();
+        $linkedShipmentIds = [];
         foreach ($this->getOrder()->getInvoiceCollection() as $invoice) {
             if ($invoice->getLinkedShippingId()) {
                 $linkedShipmentIds[] = $invoice->getLinkedShippingId();

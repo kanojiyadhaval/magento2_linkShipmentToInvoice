@@ -9,7 +9,8 @@ class CustomizeInvoiceGrid
     private $messageManager;
     private $collection;
 
-    public function __construct(MessageManager $messageManager,
+    public function __construct(
+        MessageManager $messageManager,
         SalesOrderInvoiceGridCollection $collection
     ) {
 
@@ -28,7 +29,7 @@ class CustomizeInvoiceGrid
                 $this->collection->getSelect()->join(
                     ["so" => $this->collection->getTable("sales_invoice")],
                     'main_table.entity_id = so.entity_id',
-                    array('linked_shipping_id')
+                    ['linked_shipping_id']
                 );
                 $this->collection->getSelect()->group('main_table.entity_id');
                 $this->collection->addFilterToMap(

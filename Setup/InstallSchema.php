@@ -23,20 +23,20 @@ class InstallSchema implements InstallSchemaInterface
         $installer = $setup;
         $installer->startSetup();
         $connection = $installer->getConnection();
-            if ($connection->tableColumnExists('sales_invoice', 'linked_shipping_id') === false) {
-                $connection
-                ->addColumn(
-                    $setup->getTable('sales_invoice'),
-                    'linked_shipping_id',
-                    [
-                        'type' => \Magento\Framework\DB\Ddl\Table::TYPE_INTEGER,
-                        'default' => 0,
-                        'unsigned' => true,
-                        'nullable' => true,
-                        'comment' => 'linked_shipping_id'
-                    ]
-                );
-            }
+        if ($connection->tableColumnExists('sales_invoice', 'linked_shipping_id') === false) {
+            $connection
+            ->addColumn(
+                $setup->getTable('sales_invoice'),
+                'linked_shipping_id',
+                [
+                    'type' => \Magento\Framework\DB\Ddl\Table::TYPE_INTEGER,
+                    'default' => 0,
+                    'unsigned' => true,
+                    'nullable' => true,
+                    'comment' => 'linked_shipping_id'
+                ]
+            );
+        }
         $installer->endSetup();
     }
 }

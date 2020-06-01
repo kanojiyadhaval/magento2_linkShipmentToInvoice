@@ -22,9 +22,9 @@ class InvoiceObserver implements \Magento\Framework\Event\ObserverInterface
      * @param Shipment $shipmentFactory
      */
     public function __construct(
-       \Magento\Framework\App\RequestInterface $request,
-       Shipment $shipmentFactory
-    ){
+        \Magento\Framework\App\RequestInterface $request,
+        Shipment $shipmentFactory
+    ) {
         $this->_request = $request;
         $this->shipmentFactory = $shipmentFactory;
     }
@@ -45,7 +45,7 @@ class InvoiceObserver implements \Magento\Framework\Event\ObserverInterface
         }
 
         $loadShipment = $this->shipmentFactory->get($currentShipmentId);
-        $shipmentItems = array();
+        $shipmentItems = [];
         
         foreach ($loadShipment->getItems() as $item) {
             $shipmentItems['items'][$item->getOrderItemId()] = (int) $item->getQty();
