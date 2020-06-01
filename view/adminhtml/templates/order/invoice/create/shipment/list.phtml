@@ -1,0 +1,28 @@
+<section class="admin__page-section">
+    <div class="admin__page-section-title linked_shipping_id-customized">
+        <span class="title"><?= $block->escapeHtml(__('Select Shipment')) ?></span>
+    </div>
+    <?php
+    $order = $block->getOrder();
+    $getLinkedShipmentIds = $block->getLinkedShipmentIds();
+    ?>
+    <?php if ($order->hasShipments()) { ?>
+        <div class="admin__field _required">
+            <div class="admin__field-label">
+                <label for="<?= __('Link to shipment') ?>">
+                    <span><?= __('Link to shipment') ?></span>
+                </label>
+            </div>
+            <div class="admin__field-control">
+                <select required class="admin__control-select linked_shipping_id" name="linked_shipping_id">
+                    <option value="">Select</option>
+                    <?php foreach ($order->getShipmentsCollection() as $shipment) { ?>
+                        <?php if (!in_array($shipment->getEntityId(), $getLinkedShipmentIds)) { ?>
+                            <option value="<?= $shipment->getEntityId() ?>"><?= $shipment->getIncrementId() ?></option>
+                        <?php } ?>
+                    <?php } ?>
+                </select>
+            </div>
+        </div>
+    <?php } ?>
+</section>
